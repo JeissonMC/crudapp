@@ -6,8 +6,6 @@
 session_start();   
     
     $conn = mysqli_connect("localhost","root","","crudapi");
-    $title = '';
-$description= '';
 
 if  (isset($_GET['Id_Usuario'])) {
   $id = $_GET['Id_Usuario'];

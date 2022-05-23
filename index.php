@@ -55,7 +55,7 @@ $conn = mysqli_connect("localhost","root","","crudapi");
     
    <h1 class="portada" id="portada">CRUD API PHP Y MYSQL</h1> 
     <div class="container">
-       <button type="submit" class="btn btn-danger" onclick="insertar_Datos($datos)">Insertar datos</button>
+       <button type="submit" class="btn btn-danger" onclick="insertar_Datos($datos);">Insertar datos</button>
        <?php if (isset($_SESSION['message'])) { ?>
       <div class="alert alert-<?= $_SESSION['message_type']?> alert-dismissible fade show" role="alert">
         <?= $_SESSION['message']?>
@@ -81,6 +81,8 @@ $conn = mysqli_connect("localhost","root","","crudapi");
       </thead>
       <tbody>
         <?php 
+
+        
         
         include_once 'conexion.php';
         

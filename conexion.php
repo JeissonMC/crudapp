@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 function conectar_a_bd() {
 
 $servername = "localhost";
